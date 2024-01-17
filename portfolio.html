@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G. Akash - Portfolio</title>
+    <style>
+        /* Import the fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Forte&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Berlin+Sans+FB&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Mangal&display=swap');
+
+        body {
+            background-color: #c8b7d3;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0px;
+            scroll-behavior: smooth;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border-left: 10px solid #100c08;
+            border-right: 10px solid #100c08;
+            border-top: 5px solid #100c08;
+            border-bottom: 5px solid #100c08;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 0.5em;
+            font-family: 'Forte', sans-serif; /* Use Forte for H1 */
+            align-self: flex-start;
+            width: 100%;
+            border-bottom: 5px solid #100c08;
+            text-align:center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #343a40;
+            padding: 10px;
+            width: 100%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            border: 1px solid #100c08;
+        }
+
+        nav a:hover {
+            background-color: #c8b7d3;
+            color: #fff;
+        }
+
+        section {
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .logo-section {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: flex-end;
+            margin: 10px 5px 10px 5px;
+            background-color: #e9ecef;
+            padding: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            max-height: 100vh;
+            width: 80%;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 10px;
+        }
+
+        .logo img {
+            width: 70px;
+            height: auto;
+            margin-left: 10px;
+            border: 1px solid #100c08;
+            transition: border-radius 0.3s;
+        }
+
+        .logo img:hover {
+            border-color: #100c08;
+            border-radius: 5px;
+        }
+
+        section#summary button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        #summary img.summary-image {
+            margin: 10px;
+            border: 5px solid #100c08;
+            transition: border-radius 0.5s;
+            float:right;
+            width: 200px;
+        }
+
+        #summary img.summary-image:hover {
+            border-radius: 50%;
+        }
+
+        #summary button:hover {
+            background-color: #0056b3;
+        }
+
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 0.1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 5px solid #100c08;
+        }
+
+        h2 {
+            font-family: 'Berlin Sans FB', sans-serif; /* Use Berlin Sans FB for H2 */
+        }
+
+        p {
+            font-family: 'Mangal', sans-serif; /* Use Mangal for <p> */
+        }
+
+        .project img {
+            float:right;
+            width: 300px;
+            padding:2px;
+            margin:10px;
+            border: 5px solid #100c08;
+            border-radius: 10px;
+            margin-top: 10px;
+            transition: border-radius 0.5s;
+        }
+
+        .project img:hover {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hi, I'm <span class="ani"></span></h1>
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".ani", {
+            strings: ["Akash!", "a Developer!", "an Engineer!"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+    </script>
+
+   <header>
+        <h1>G. Akash
+        <p>Aspiring Junior Engineer</p></h1	>
+    </header>
+
+    <nav>
+        <a href="#summary">Summary</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="summary" class="summary">
+        <div>
+            <h2>Summary</h2>
+<img class="summary-image" src="Akash.jpeg" alt="Your Photograph" width="100">            
+<p>
+                I am eager to contribute effectively to innovative projects and apply my knowledge in a practical setting. My goal is to leverage my education and enthusiasm to make meaningful contributions as a Junior Graduate Trainee, collaborating with experienced professionals to further develop my skills and contribute to the success of the team.</p>
+
+            <p>Excited about the prospect of joining a dynamic and forward-thinking organization, I am confident in my ability to adapt quickly and contribute positively to the challenges that come my way."
+            </p>
+            <a href="GUGGILLA-AKASH-NAGARAJU.pdf" download="GUGGILLA-AKASH-NAGARAJU.pdf">
+                <button>Resume Download</button>
+            </a>
+        </div>
+        
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, C, Java</li>
+            <li>Database Management: MySQL, Oracle, SQL</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+            <li>Operating Systems: Windows, Linux</li>
+        </ul>
+    </section>
+
+    <section id="logos">
+        <div class="logo-section">
+            <div class="logo">
+                <img src="python.jpeg" alt="Python Logo">
+            </div>
+            <div class="logo">
+                <img src="java.jpeg" alt="Java Logo">
+            </div>
+            <div class="logo">
+                <img src="dbms.jpeg" alt="DBMS Logo">
+            </div>
+            <div class="logo">
+                <img src="html.png" alt="HTML Logo">
+            </div>
+            <div class="logo">
+                <img src="css.jpeg" alt="CSS Logo">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h2>Price Negotiating Chatbot</h2>
+            <img src="chatbot.jpeg" alt="Chatbot Project" />
+            <p>An interactive e-commerce website was designed and implemented to seamlessly integrate with the chatbot. This not only provided a platform for users to negotiate but also contributed to a 20% increase in user engagement.</P>
+            <p>Support Vector Machines (SVM) and K-Nearest Neighbors (KNN) algorithms were utilized to analyze and predict negotiation outcomes. This resulted in a 15% enhancement in negotiation success rates, contributing to the effectiveness of the chatbot.</p>
+            <p>The implementation of the Price Negotiating Chatbot led to tangible improvements in operational efficiency and user satisfaction. The project's success was reflected in a 20% increase in overall operational efficiency, showcasing the effectiveness of integrating innovative solutions in e-commerce platforms.</p>
+            <p>This project not only demonstrated technical proficiency in natural language processing and machine learning but also highlighted the ability to address real-world challenges in the e-commerce sector. The combination of a user-friendly interface, advanced algorithms, and a focus on user satisfaction made the Price Negotiating Chatbot a valuable addition to the realm of online shopping.</p>
+        </div>
+        <div class="project">
+            <h2>Image Encryption and Decryption</h2>
+            <img src="encrydecry.jpeg" alt="Encryption/Decryption Project" />
+            <p>The AES algorithm, known for its robust encryption capabilities, was implemented to secure image files. AES is a symmetric encryption algorithm, ensuring that the same key is used for both encryption and decryption.</p>
+            <p>The application of the AES algorithm significantly enhances the security of sensitive image data, protecting it from unauthorized access and ensuring confidentiality. Image encryption is applicable in scenarios where the privacy and confidentiality of visual information are paramount, such as in medical imaging, secure communications, or classified image data.</p>
+            <p>"Image Encryption and Decryption Using AES Algorithm" project combines theoretical knowledge of encryption principles with practical implementation, resulting in a robust solution for securing image data with the widely recognized AES algorithm. This project is valuable for those interested in data security, cryptography, and the application of encryption in image processing.</p>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <p>Completed virtual internship – Salesforce</p>
+        <p>Attained Ethical Hacking Workshop certification – Intracollege</p>
+        <p>Certified in Python programming – University of Michigan</p>
+        <p>Earned Oracle Academy certification in DB programming with SQL</p>
+        <p>Investigated hate content on social media using Natural Language Processing and Logistic Regression, published findings on hate speech detection in the International Journal of Engineering Research & Technology</p>
+        <p>Engaged in Smart India Hackathon, focusing on Blockchain and Cybersecurity to trace darknet drug trafficking through cryptocurrency transactions</p>
+    </section>
+
+    <!-- Add the following code inside the Contact section -->
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Mobile: +91 6309369566</p>
+        <p>Email: akashguggilla18@gmail.com</P>
+
+        <!-- LinkedIn Icon -->
+        <a href="https://www.linkedin.com/in/akashguggilla" target="_blank">
+            <img src="linkedin.png" alt="LinkedIn" width="40" height="40">
+        </a>
+
+        <!-- GitHub Icon -->
+        <a href="https://github.com/YourGitHubUsername" target="_blank">
+            <img src="github.png" alt="GitHub" width="40" height="40">
+        </a>
+
+        <p>Location: Hyderabad</p>
+        <br/><br/><p></p>
+    </section>
+
+    <footer>
+        <p>2024 G.Akash Bachelor of Technology Information Technology</p>
+    </footer>
+
+
+</body>
+
+</html>
